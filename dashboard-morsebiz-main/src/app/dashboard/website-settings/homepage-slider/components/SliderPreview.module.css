@@ -1,0 +1,38 @@
+.previewContainer {
+  /* Reset all margin/padding for preview container */
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.contentArea {
+  /* Reset all margin/padding for content area */
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.titleElement {
+  /* Force title margins and padding */
+  margin: 0 !important;
+  padding: 0 !important;
+  /* Allow dynamic styling to override */
+}
+
+.descriptionElement {
+  /* Force description margins and padding */
+  margin: 0 !important;
+  padding: 0 !important;
+  /* Allow dynamic styling to override */
+}
+
+.buttonElement {
+  /* Force button margins and padding */
+  margin: 0 !important;
+  padding: 0 !important;
+  /* Allow dynamic styling to override */
+}
+
+/* Utility class to force custom spacing */
+.forceSpacing {
+  margin: var(--margin) !important;
+  padding: var(--padding) !important;
+}

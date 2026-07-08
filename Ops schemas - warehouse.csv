@@ -1,0 +1,19 @@
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,warehouse.inwards,,,,,,,,,,,,,,,,
+,,schema,,,,,,,,,,,,,,,,
+,,,inward_id,inward_date,invoice_set,vendor_name,po_references,status,comments,last_updated_at,last_updated_by,,,,,,,
+,,,unique inward ID,Date when inward comes to warehouse,set of associated invoices,single vendors' inward,associated purchase orders with the inward,in progress or completed,any comments if the user wants to add,to check last edit,to check who edited,,,,,,,
+,,,uuid,date field,array of mongo invoice IDs,string,array of mongo PO IDs,In progress/completed,string,timestamp,username,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,warehouse.inward_details,,,,,,,,,,,,,,,,
+,,,inward_details_id,inward_id,brand,sku_code,qty_per_box,no_of_boxes,label_img_url,unknown_sku_flag,damaged_flag,damage_img_url,inventory_ids,comments,last_updated_at,last_updated_by,,
+,,,unique inward entry ID,associated inward,Volkswagen/Renault/etc. Lookup from limited list,part number of the item,one pack mein have multiple,total number of boxes for that part,URL of the image clicked for unique labels,Whether not in invoice,Whether part is damaged,"If part is damaged, its photo is stored","after status is changed to completed, we will need to know the associated inventory IDS",any comments if the user wants to add,to check last edit,to check who edited,,
+,,,uuid,uuid,brand_id,string,float,float,web_url/string,Boolean,Booleam,web_url/string,array of uuids,string,timestamp,username,,
+,,,,,,,,,,,,,,,,,,
+,,warehouse.inventory,,,,,,,,,,,,,,,,
+,,,inventory_id,inward_details_id,inward_id,brand,sku_code,qty_per_box,description,country_of_origin,weight_per_pack,label_img_url,unknown_sku_flag,damaged_flag,damage_img_url,comments,last_updated_at,last_updated_by
+,,,unique warehouse inventory ID,,,,,,"will be fetched using AI on label and internet search, Weight in kgs",,,,,,,any comments if the user wants to add,to check last edit,to check who edited
+,,,uuid,uuid,uuid,string,string,float,string,string,float,string,Boolean,Boolean,string,string,timestamp,username

@@ -1,0 +1,66 @@
+{
+    "seller": {
+    "name": "RS ENTERPRISES",
+    "address": "OFFICE NO 8 ATHARV BLISS NEAR KARNATAKA BANK BAVADHAN BK PUNE",
+    "phone": "7249266525",
+    "mobile": "7350271112",
+    "email": "[rsnet2020@rediffmail.com](mailto:rsnet2020@rediffmail.com)",
+    "gstin": "27AKVPD3228N1ZN",
+    "pan": "AKVPD3228N",
+    "bank_details": {
+    "bank_name": "KARNATAKA BANK (BAVADHAN)",
+    "account_no": "9332000100035801",
+    "ifs_code": "KARB0000933"
+    }
+    },
+    "buyer": {
+    "name": "M/S.MORSEBIZ TECHNOLOGY SERVICES PRIVATE LIMITED",
+    "address": "CTS NO 95 4 B 3 & 4 590,COMMERZ II , OBERORI GARDEN",
+    "state": "MAHARASHTRA",
+    "state_code": "27",
+    "gstin": "27AAPCM5559A1Z9",
+    "contact_no": "0"
+    },
+    "invoice": {
+    "invoice_no": "RE-2025-26/92",
+    "date": "2025-12-02",
+    "vehicle_no": null
+    },
+    "line_items": [
+    {
+    "sr_no": 1,
+    "part_no": "2630002752",
+    "description": "FILTER ASSY ENGINE OIL",
+    "hsn": "84212300",
+    "cgst_rate": 9.0,
+    "sgst_rate": 9.0,
+    "quantity": 4500,
+    "rate": 93.22,
+    "discount_percent": 13.0,
+    "total_amount": 430650.0
+    },
+    {
+    "sr_no": 2,
+    "part_no": "2431202270",
+    "description": "BELT VALVE TIMMING",
+    "hsn": "40103590",
+    "cgst_rate": 9.0,
+    "sgst_rate": 9.0,
+    "quantity": 176,
+    "rate": 528.81,
+    "discount_percent": 13.0,
+    "total_amount": 95546.88
+    }
+    ],
+    "totals": {
+    "part_sub_total_amount": 2339374.25,
+    "part_discount": 296238.72,
+    "taxable_amount": 1982520.88,
+    "cgst_9_percent": 178426.8,
+    "sgst_9_percent": 178426.8,
+    "transport_charges": 43500.0,
+    "net_total": 2382874.0
+    },
+    "remarks": "Rupees Twenty Three Lac Eighty Two Thousand Eight Hundred Seventy Four Only"
+    }
+    
